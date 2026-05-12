@@ -30,8 +30,7 @@ public class MainProgram {
                     new WorkerThread(dataPerThread);
 
             threads[i].setName(
-                    "Thread-" + (i + 1)
-            );
+                    "Thread-" + (i + 1));
 
             threads[i].start();
         }
@@ -56,8 +55,6 @@ public class MainProgram {
 }
 
 
-    /**
-     * @param args the command line arguments
-     */
+    
    
 

@@ -23,13 +23,26 @@ public class JajaranGenjang extends Bangun {
         this.sisiMiring = sisiMiring;
     }
 
+    public JajaranGenjang(double alas, double tinggi) {
+        this.alas = alas;
+        this.tinggi = tinggi;
+        this.sisiMiring = alas; // sisi miring diasumsikan sama dengan alas
+    }
+
+    // Getter - Encapsulation
+    public double getAlas()       { return alas; }
+    public double getTinggi()     { return tinggi; }
+    public double getSisiMiring() { return sisiMiring; }
     
+    @Override
     public double hitungLuas() {
         return alas * tinggi;
     }
-     
+    
+    @Override
     public double hitungKeliling() {
         return 2 * (alas + sisiMiring);
     }
+    
 }
 

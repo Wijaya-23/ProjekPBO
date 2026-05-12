@@ -25,7 +25,7 @@ class LimasJajaranGenjang extends BangunRuang {
         return alas.hitungLuas(); // sederhana
     }
 
-// @Override
+    @Override
     public double hitungKeliling() {
         return alas.hitungKeliling();
     }
