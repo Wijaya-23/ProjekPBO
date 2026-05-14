@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package benda_geometri;
+import java.util.Random;
 
 /**
  *
@@ -23,10 +24,10 @@ public class JajaranGenjang extends Bangun {
         this.sisiMiring = sisiMiring;
     }
 
-    public JajaranGenjang(double alas, double tinggi) {
+    public JajaranGenjang(double alas, double tinggi, Random rand) {
         this.alas = alas;
         this.tinggi = tinggi;
-        this.sisiMiring = alas; // sisi miring diasumsikan sama dengan alas
+        this.sisiMiring = (rand.nextDouble() * (alas - 1)) + 1; // sisi miring diasumsikan sama dengan alas
     }
 
     // Getter - Encapsulation

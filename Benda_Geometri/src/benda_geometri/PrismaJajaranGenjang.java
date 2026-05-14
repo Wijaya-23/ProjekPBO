@@ -22,12 +22,15 @@ public class PrismaJajaranGenjang extends BangunRuang {
         this.tinggiPrisma = tinggiPrisma;
     }
 
-   
+    public double getTinggiPrisma() {return tinggiPrisma;}
+    
+    @Override
     public double hitungLuas() {
-        return alas.hitungLuas();
+        return (2 * alas.hitungLuas())
+                + (alas.hitungKeliling() * tinggiPrisma);
     }
 
-  
+    @Override
     public double hitungKeliling() {
         return alas.hitungKeliling();
     }
@@ -35,8 +38,6 @@ public class PrismaJajaranGenjang extends BangunRuang {
    
     @Override
     public double hitungVolume() {
-
-        return alas.hitungLuas()
-                * tinggiPrisma;
+        return alas.hitungLuas() * tinggiPrisma;
     }
 }

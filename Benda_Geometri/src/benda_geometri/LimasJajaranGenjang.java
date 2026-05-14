@@ -19,17 +19,20 @@ class LimasJajaranGenjang extends BangunRuang {
         this.alas = alas;
         this.tinggiLimas = tinggiLimas;
     }
-
     
+    //Getter
+    public double getTinggiLimas() {return tinggiLimas;}
+    
+    @Override
     public double hitungLuas() {
-        return alas.hitungLuas(); // sederhana
+        return alas.hitungLuas()
+                + (alas.hitungKeliling() * tinggiLimas/2.0); // sederhana
     }
 
     @Override
     public double hitungKeliling() {
         return alas.hitungKeliling();
     }
-
    
     @Override
     public double hitungVolume() {
@@ -37,8 +40,6 @@ class LimasJajaranGenjang extends BangunRuang {
     }
 
    
-    public double hitungKelling() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
 }
 
