@@ -8,9 +8,7 @@ package benda_geometri;
  *
  * @author LENOVOJOJO007
  */
-// =======================
-// 3D BASE CLASS
-// =======================
-abstract class BangunRuang extends Bangun {
+
+abstract class BangunRuang {
     public abstract double hitungVolume();
 }
